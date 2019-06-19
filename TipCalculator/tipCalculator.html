@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tipCalculator</title>
+    <link rel="stylesheet" href="tipCalculator.css">
+    <link rel="stylesheet" href="G:prit/css/font-awesome.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-title">
+                <h3 class="text-center">tip Calculator</h3>
+            </div>
+            <div class="card-body">
+                <div class="feedback alert text-center">your feedback...</div>
+            
+
+            <form action="" id="tip-form">
+                <h5 class="text-bill">How much was your bill??</h5>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bill-icon"><i class="fa fa-usd"></i></span>
+                    </div>
+                    <input type="number" class="form-control" id='input-bill'>
+                </div>
+                <!-- END OF THE SINGLE INPUT -->
+
+                <!-- SINGLE INPUT -->
+                <div class="share-bill">
+                    <h5 class="text-capitalize">How many people sharing the bill?</h5>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text user-icon"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="number" class="form-control" id='input-users'>
+                    </div>
+                </div>
+                <!-- END OF THE SINGLE INPUT -->
+
+
+                <!-- SINGLE INPUT -->
+                <div class="service">
+                    <h5 class="text-capitalize">how was your service?</h5>
+                    <div class="form-group">
+                        <select class="form-control" id="input-service">
+                            <option selected value="0">Choose...</option>
+                        </select>
+                    </div>    
+                </div>
+                <br>
+                <div class="btn-submit">
+                <input type="submit" value="calculate" class="btn submitBtn">
+                </div>
+            </form>
+            <div class="loader text-center">
+                <img src="loading.gif">
+            </div>
+            <!-- RESULT -->
+
+            <div class="result text-center">
+                <h3 class="text-capitalize">tip amount<span> $ </span><span id='tip-amount'></span></h3>
+                <h3 class="text-capitalize">total amount<span> $ </span><span id = 'total-amount'></span></h3>
+                <h3 class="text-capitalize">each person owns<span> $ </span><span id='person-amount'></span></h3>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+    <script src='tipCalculator.js'></script>
+</body>
+</html>
